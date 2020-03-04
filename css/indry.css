@@ -1,11 +1,11 @@
-body{
-    background-color: #F0FFFF;
+.container{
+    background-color: #98FB98;
 }
-/* .navbar{
-    background-color: #1E90FF;
+/* .header{
+    background-color: #778899;
 } */
 
-nav a img{
+nav img{
     width: 70px;
     height: 70px;
 }

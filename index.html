@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="css/ika.css">
     <link rel="stylesheet" href="css/indry.css">
 
-    <!-- link status -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/0a27f9b13d.js" crossorigin="anonymous"></script>
-
+    <!-- link header -->
+    <!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_form_addon&stacked=h -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <!-- link slidebar -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- link status -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0a27f9b13d.js" crossorigin="anonymous"></script>
 
     <!-- link about -->
+    <!-- https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -28,28 +35,27 @@
 <body>
 <div class="container">
     <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">
-                <img src="img/gambar2.jpg" class="img-fluid" alt="gambar">
-            </a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Kontak</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                  <img src="img/gambar2.jpg" alt="gambar">
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Contac.html">Contact</a></li>
+              </ul>
+              <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-        </nav>
+          </nav>
     </div>
     <div class="slidebar">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -84,7 +90,7 @@
             <div class="row">
                     <div class="col-md-12">
                         <h1>Welcome to our site</h1>
-                        <h5>Lorem ipsum dolor sit amet consectetur</h5>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti dolore incidunt iste qui. Nam aperiam asperiores numquam, enim ullam rem, voluptatem consectetur sequi atque qui corrupti accusamus debitis totam.</h5>
                     </div>
                 <!-- GAGAL
                 <div class="col align-self-center">
@@ -122,22 +128,49 @@
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>   
                         <!-- Wrapper for carousel items -->
-                        <div class="carousel-inner">
+                        <div class="carousel-inner">		
                             <div class="item carousel-item active">
                                 <div class="img-box"><img src="img/gambar7.jpg" alt=""></div>
-                                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-                                <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
-                            </div>
-                            <div class="item carousel-item">
-                                <div class="img-box"><img src="img/gambar7.jpg" alt=""></div>
-                                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-                                <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
-                            </div>
-                            <div class="item carousel-item">
-                                <div class="img-box"><img src="img/gambar7.jpg" alt=""></div>
                                 <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                <p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
+                                <div class="star-rating">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                    </ul>
+                                </div>
                             </div>
+                            <div class="item carousel-item">
+                                <div class="img-box"><img src="img/gambar7.jpg" alt=""></div>
+                                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                                <p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
+                                <div class="star-rating">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="img-box"><img src="img/gambar7.jpg" alt=""></div>
+                                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.</p>
+                                <p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
+                                <div class="star-rating">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                    </ul>
+                                </div>
+                            </div>		
                         </div>
                         <!-- Carousel controls -->
                         <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
@@ -149,6 +182,25 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="video">
+           <div class="row">
+               <div class="col-md-4">
+                    <iframe width="320" height="215" src="https://www.youtube.com/embed/SpkdMglZnHc">
+                    </iframe>
+                    <h5>Wonderfull Indonesia | Keindahan Alam Nusantara | Indonesia</h5>
+               </div>
+               <div class="col-md-4">
+                    <iframe width="320" height="215" src="https://www.youtube.com/embed/ijQ8xk-JYNk">
+                    </iframe>
+                    <h5>Indonesia Bagus - Menjelajahi Keindahan Alam Raja Ampat</h5>
+                </div>
+                <div class="col-md-4">
+                    <iframe width="320" height="215" src="https://www.youtube.com/embed/ne9QZ2MCO24">
+                    </iframe>
+                    <h5>INDONESIA by Drone (4K)</h5>
+               </div>
+           </div>
         </div>
     </div>
     <div class="footer">
