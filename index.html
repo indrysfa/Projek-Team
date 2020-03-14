@@ -27,7 +27,7 @@
     <!-- https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
@@ -35,14 +35,14 @@
 <body>
 <div class="container">
     <div class="header">
-        <nav class="navbar navbar-inverse">
+        <!-- <nav class="navbar navbar-inverse">
             <div class="container-fluid">
               <div class="navbar-header">
                   <img src="img/gambar2.jpg" alt="gambar">
               </div>
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="Contac.html">Contact</a></li>
+                <li class="active nav-item"><a href="index.html">Home</a></li>
+                <li class=><a href="Contac.html">Contact</a></li>
               </ul>
               <form class="navbar-form navbar-left" action="/action_page.php">
                 <div class="input-group">
@@ -53,6 +53,29 @@
                     </button>
                   </div>
                 </div>
+              </form>
+            </div>
+          </nav> -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href=index.html>
+                <img src="img/gambar2.jpg" alt="gambar">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contac.html">Contact </a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>
             </div>
           </nav>
